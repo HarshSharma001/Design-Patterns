@@ -1,0 +1,21 @@
+
+1) Factory Design Pattern (Creational category):
+
+It's used to inject objects, like spring container. It's used for attaining loose coupling in the code, like 
+we use dependency injection.
+
+2) Singleton Design Pattern (Creational category):
+
+It's used to make a class having a single instance all the time, and we even make it thread safe, so that one 
+time only one thread can access the only object Singleton class may have.
+
+3) Builder Design Pattern (Creational category):
+
+If you want to make object creation much more easier, then we use this pattern, definitely it's gonna create 
+a massive increase in code lines, but it's totally worth it. We may use a helper class for creation of an object
+using constructors or getter-setters or even combinations of both.
+
+4) Strategy Design Pattern (Behavioural category):
+
+It allows run-time strategy choosing functionality, from a set of available concrete strategies of a particlular
+abstract concept. Like Searching, it could be either linear search or binary search depending upon user.
