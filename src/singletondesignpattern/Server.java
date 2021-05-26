@@ -27,7 +27,7 @@ public class Server {
 	public static Server getServer() {
 		if (server == null) {
 			synchronized (Server.class) {
-				if (server = null) {
+				if (server == null) {
 					server = new Server();
 				}
 			}	
