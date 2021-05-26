@@ -4,7 +4,7 @@ public class Server {
 	private int serverId;
 	private String serverName;
 	
-	private static Server server = new Server();
+	private static volatile Server server;
 	
 	private Server() {};
 	
@@ -25,6 +25,13 @@ public class Server {
 	}
 	
 	public static Server getServer() {
+		if (server == null) {
+			synchronized (Server.class) {
+				if (server = null) {
+					server = new Server();
+				}
+			}	
+		}
 		return server;
 	}
 	
